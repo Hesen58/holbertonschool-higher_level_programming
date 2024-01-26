@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 def uppercase(strzor):
+    zor = ""
     for i in strzor:
         if ord(i) > 96 and ord(i) < 123:
-            print("{}".format(chr(ord(i) - 32)), end="")
+            zor += chr(ord(i) - 32)
         else:
-            print("{}".format(i), end="")
+            zor += i
+    print("{}".format(zor))
