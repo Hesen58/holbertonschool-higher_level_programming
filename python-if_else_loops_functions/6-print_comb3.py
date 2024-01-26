@@ -3,7 +3,7 @@ for i in range(0, 10):
     for j in range(0, 10):
         if i < j and i != 8:
             print("{}{}".format(i, j), end=", ")
-        elif i == 8:
+        elif i < j and i == 8:
             print("{}{}".format(i, j))
         else:
             continue
