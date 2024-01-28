@@ -12,4 +12,3 @@ if __name__ == "__main__":
         print("{} arguments".format(sys.argv[zoraq]))
         for i in range(1, zor):
             print("{}: {}".format(i, sys.argv[i]))
-    
