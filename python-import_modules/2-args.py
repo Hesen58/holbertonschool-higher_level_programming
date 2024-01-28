@@ -6,9 +6,9 @@ if __name__ == "__main__":
     if zoraq == 0:
         print("{} arguments.".format(zoraq))
     elif zoraq == 1:
-        print("{} argument".format(sys.argv[zoraq]))
+        print("{} argument:".format(zoraq))
         print("{}: {}".format(zoraq, sys.argv[zoraq]))
     else:
-        print("{} arguments".format(sys.argv[zoraq]))
+        print("{} arguments:".format(zoraq))
         for i in range(1, zor):
             print("{}: {}".format(i, sys.argv[i]))
