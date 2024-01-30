@@ -1,0 +1,10 @@
+#!/usr/bin/python3
+def uniq_add(my_list=[]):
+    my_list.sort()
+    zor = 0
+    for i in range(0, len(my_list)):
+        if my_list[i] == my_list[i + 1] and i + 1 != len(my_list):
+            continue
+        if my_list[i] != my_list[i + 1] and i + 1 != len(my_list):
+            zor += int(my_list[i])
+    return zor
