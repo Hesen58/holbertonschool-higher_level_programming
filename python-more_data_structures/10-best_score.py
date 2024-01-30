@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
-    if a_dictionary == None:
+    if a_dictionary == {}:
         return None
     zorkey = list(a_dictionary.keys())
     zorval = list(a_dictionary.values())[0]
