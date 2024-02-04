@@ -14,8 +14,9 @@ def matrix_divided(matrix, div):
     if div == 0:
         raise ZeroDivisionError("division by zero")
     for i in range(len(matrix)):
-        if not (len(matrix[i]) == len(matrix[i + 1])):
-            raise TypeError("Each row of the matrix must have the same size")
+        if i != len(matrix[i]) - 1:
+            if not (len(matrix[i]) == len(matrix[i + 1])):
+                raise TypeError("Each row of the matrix must have the same size")
         zor.append([])
         for node in matrix[i]:
             if not (isinstance(node, int) or isinstance(node, float)):
