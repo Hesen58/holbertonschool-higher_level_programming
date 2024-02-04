@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 '''Something useful'''
 
+
 def add_integer(a, b=98):
     '''Something more useful
 
