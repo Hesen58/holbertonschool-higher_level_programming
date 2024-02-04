@@ -21,5 +21,5 @@ def matrix_divided(matrix, div):
         for node in matrix[i]:
             if not (isinstance(node, int) or isinstance(node, float)):
                 raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
-            zor[i].append(round(node / div), 2)
+            zor[i].append(round(node / div, 2))
     return zor
