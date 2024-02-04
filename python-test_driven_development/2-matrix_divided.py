@@ -10,7 +10,7 @@ def matrix_divided(matrix, div):
     '''
     zor = []
     zori = 0
-    oldrow = matrxi[0]
+    oldrow = matrix[0]
     if not (isinstance(div, int) or isinstance(div, float)):
         raise TypeError("div must be a number")
     if div == 0:
