@@ -48,7 +48,7 @@ class Rectangle:
         zor = ""
         if not (self.__width == 0 or self.__height == 0):
             for i in range(self.__height):
-                zor += self.print_symbol * self.__width
+                zor += str(self.print_symbol) * self.__width
                 if i != self.__height - 1:
                     zor += "\n"
         return zor
