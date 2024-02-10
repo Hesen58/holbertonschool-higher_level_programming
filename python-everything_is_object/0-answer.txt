@@ -1,1 +1,1 @@
-istype
+type
