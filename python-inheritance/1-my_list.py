@@ -2,7 +2,7 @@
 '''Something useful'''
 
 
-class Mylist(list):
+class MyList(list):
     '''Something more useful'''
     def print_sorted(self):
         zor = self[:]
