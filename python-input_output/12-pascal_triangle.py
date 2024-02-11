@@ -8,8 +8,7 @@ def pascal_triangle(n):
     if n <= 0:
         return zor
     zor.append([1])
-    zor.append([1, 1])
-    for i in range(2, n):
+    for i in range(1, n):
         zor.append([])
         zor[i].append(1)
         for j in range(i - 1):
