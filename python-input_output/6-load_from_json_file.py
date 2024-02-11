@@ -6,5 +6,5 @@ import json
 def load_from_json_file(filename):
     '''Something more useful'''
     with open(filename, "r") as f:
-        zor = json.load(filename)
+        zor = json.load(f.read())
     return zor
