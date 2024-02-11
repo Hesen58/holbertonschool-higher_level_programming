@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''Something useful'''
-Rect = __import__('9-rectangle.py').Rectangle
+Rect = __import__('9-rectangle').Rectangle
 
 
 class Square(Rect):
