@@ -85,4 +85,4 @@ class Rectangle(Base):
                 setattr(self, zor_list[i], args[i])
         else:
             for j in kwargs.keys():
-                setattr(self, j, kwargs[k])
+                setattr(self, j, kwargs[j])
