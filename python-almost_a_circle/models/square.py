@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-0;10;1c'''Something useful'''
+'''Something useful'''
 from models.rectangle import Rectangle
 
 
