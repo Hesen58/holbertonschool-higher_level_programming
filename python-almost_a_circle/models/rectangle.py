@@ -72,7 +72,14 @@ class Rectangle(Base):
             print(" " * self.x + "#" * self.width)
 
     def __str__(self):
-        zor = self.__class__.__name__
+        zor_name = self.__class__.__name__
         return "[{}] ({}) {}/{} - {}/{}".format(
-            zor, self.id, self.x, self.y, self.width, self.height
+            zor_name, self.id, self.x, self.y, self.width, self.height
         )
+
+    def update(self, *args):
+        '''Something much more useful'''
+        zor_list = ["id", "width", "height", "x", "y"]
+        if len(args):
+            for i in range(len(args)):
+                setattr(self, zor_list[i], args[i])
