@@ -66,8 +66,10 @@ class Rectangle(Base):
 
     def display(self):
         '''Something much more useful'''
-        for i in range(self.__height):
-            print("#" * self.__width)
+        for j in range(self.y):
+            print()
+        for i in range(self.height):
+            print(" " * self.x + "#" * self.width)
 
     def __str__(self):
         zor = self.__class__.__name__
