@@ -77,9 +77,12 @@ class Rectangle(Base):
             zor_name, self.id, self.x, self.y, self.width, self.height
         )
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         '''Something much more useful'''
         zor_list = ["id", "width", "height", "x", "y"]
         if len(args):
             for i in range(len(args)):
                 setattr(self, zor_list[i], args[i])
+        else:
+            for j in kwargs.keys():
+                setattr(self, k, kwargs[k])
