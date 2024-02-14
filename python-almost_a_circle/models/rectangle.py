@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''Something useful'''
-Base = __import__('models/base').Base
+import models.base
 
 
 class Rectangle(Base):
