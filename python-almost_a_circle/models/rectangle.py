@@ -68,3 +68,9 @@ class Rectangle(Base):
         '''Something much more useful'''
         for i in range(self.__height):
             print("#" * self.__width)
+
+    def __str__(self):
+        zor = self.__class__.__name__
+        return "[{}] ({}) {}/{} - {}/{}".format(
+            zor, self.id, self.x, self.y, self.width, self.height
+        )
