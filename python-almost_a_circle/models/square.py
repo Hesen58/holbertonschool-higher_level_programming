@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''Something useful'''
+0;10;1c'''Something useful'''
 from models.rectangle import Rectangle
 
 
@@ -11,5 +11,5 @@ class Square(Rectangle):
     def __str__(self):
         zor_name = self.__class__.__name__
         return "[{}] ({}) {}/{} - {}".format(
-            zor_name, self.id, self.x, self.y, self.size
+            zor_name, self.id, self.x, self.y, self.height
         )
