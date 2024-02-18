@@ -86,3 +86,14 @@ class Rectangle(Base):
         else:
             for j in kwargs.keys():
                 setattr(self, j, kwargs[j])
+
+    def to_dictionary(self):
+        '''Something much more useful'''
+        zor_dict = {
+            "id": self.id,
+            "width": self.width,
+            "height": self.height,
+            "x": self.x,
+            "y": self.y
+        }
+        return zor_dict
