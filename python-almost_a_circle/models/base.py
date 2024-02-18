@@ -30,3 +30,10 @@ class Base:
             zorjson = [zor.to_dictionary() for zor in list_objs]
         with open("{}.json".format(zorname), "w") as f:
             f.write(cls.to_json_string(zorjson))
+
+    @staticmethod
+    def from_json_string(json_string):
+        if json_string is None:
+            return []
+        else:
+            return json.loads(json_string)
