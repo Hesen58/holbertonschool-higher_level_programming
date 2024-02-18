@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''Something useful'''
-
+import json
 
 class Base:
     '''Something more useful'''
