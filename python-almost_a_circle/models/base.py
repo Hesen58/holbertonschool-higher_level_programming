@@ -37,3 +37,13 @@ class Base:
             return []
         else:
             return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        zorname = cls.__name__
+        if zorname == "Square":
+            zordummy = cls(31)
+        elif zorname == "Rectangle":
+            zordummy = cls(31, 32)
+        zordummy.update(**dictionary)
+        return zordummy
