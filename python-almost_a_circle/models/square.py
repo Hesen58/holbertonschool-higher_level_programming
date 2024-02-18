@@ -13,3 +13,12 @@ class Square(Rectangle):
         return "[{}] ({}) {}/{} - {}".format(
             zor_name, self.id, self.x, self.y, self.height
         )
+
+    @property
+    def size(self):
+        return self.__height
+
+    @size.setter
+    def size(self, value):
+        self.__height = value
+        self.__width = value
