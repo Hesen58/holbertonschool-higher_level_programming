@@ -20,3 +20,13 @@ class Base:
             return "[]"
         else:
             return json.dumps(list_dictionaries)
+
+    @classmethod
+    def save_to_file(cls, list_objs):
+        zorname = cls.__name__
+        if list_objs is None:
+            zorjson = []
+        else:
+            zorjson = [obj.to_dictionary() for zor in list_objs]
+        with open("{}.json".format(zorname), "w") as f:
+            f.write(cls.to_json_string(zorjson))
