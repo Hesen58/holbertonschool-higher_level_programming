@@ -2,6 +2,7 @@
 '''Something useful'''
 import json
 
+
 class Base:
     '''Something more useful'''
     __nb_objects = 0
