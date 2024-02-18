@@ -47,3 +47,13 @@ class Base:
             zordummy = cls(31, 32)
         zordummy.update(**dictionary)
         return zordummy
+
+    @classmethod
+    def load_from_file(cls):
+        zorfile = "{}.json".format(cls.__name__)
+        try:
+            with open(zorfile, "r") as f:
+                zordict = cls.from_json_string(f.read())
+            zorlist = [cls.create(**zor) for zor in zordict]
+            return zorlist
+            
