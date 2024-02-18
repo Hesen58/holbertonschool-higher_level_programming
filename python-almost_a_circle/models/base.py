@@ -56,4 +56,3 @@ class Base:
                 zordict = cls.from_json_string(f.read())
             zorlist = [cls.create(**zor) for zor in zordict]
             return zorlist
-            
