@@ -25,7 +25,7 @@ class Square(Rectangle):
 
     def update(self, *args, **kwargs):
         '''Something much more useful'''
-        zor_list = ["id", "width", "height", "x", "y"]
+        zor_list = ["id", "size", "x", "y"]
         if len(args):
             for i in range(len(args)):
                 setattr(self, zor_list[i], args[i])
