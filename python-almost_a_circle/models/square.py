@@ -32,3 +32,13 @@ class Square(Rectangle):
         else:
             for j in kwargs.keys():
                 setattr(self, j, kwargs[j])
+
+    def to_dictionary(self):
+        '''Something much more usegul'''
+        zor_dict = {
+            "id": self.id,
+            "size": self.width,
+            "x": self.x,
+            "y": self.y
+        }
+        return zor_dict
