@@ -27,6 +27,6 @@ class Base:
         if list_objs is None:
             zorjson = []
         else:
-            zorjson = [obj.to_dictionary() for zor in list_objs]
+            zorjson = [zor.to_dictionary() for zor in list_objs]
         with open("{}.json".format(zorname), "w") as f:
             f.write(cls.to_json_string(zorjson))
