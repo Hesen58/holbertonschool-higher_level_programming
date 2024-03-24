@@ -1,2 +1,2 @@
 -- Something useful
-drop database hbtn_0c_0
+drop database hbtn_0c_0;
