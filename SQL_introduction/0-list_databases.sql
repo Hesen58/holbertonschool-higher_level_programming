@@ -1,2 +1,2 @@
-# Something useful
+-- Something useful
 SHOW DATABASES;
