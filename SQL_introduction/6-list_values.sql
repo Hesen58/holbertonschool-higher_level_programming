@@ -1,2 +1,2 @@
 -- Something useful
-select * from first_table
+SELECT * from first_table
