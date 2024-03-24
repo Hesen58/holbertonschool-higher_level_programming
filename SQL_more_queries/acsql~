@@ -1,0 +1,4 @@
+#!/bin/bash
+touch "$1"
+echo "-- Something useful" > "$1"
+emacs -nw "$1"
