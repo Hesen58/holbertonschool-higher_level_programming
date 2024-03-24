@@ -1,0 +1,2 @@
+-- Something useful
+show tables
