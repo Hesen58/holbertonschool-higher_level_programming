@@ -1,2 +1,2 @@
 # Something useful
-show DATABASES;
+SHOW DATABASES;
