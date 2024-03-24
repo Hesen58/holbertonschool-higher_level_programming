@@ -1,7 +1,7 @@
 -- Something useful
-create table if not exists second_table (id int, name varchar(256), score int);
-insert into second_table (id, naame, score)
-values
+CREATE TABLE if not exists second_table (id int, name varchar(256), score int);
+INSERT INTO second_table (id, naame, score)
+VALUES
 	(1, "John", 10),
 	(2, "Alex", 3),
 	(3, "Bob", 14),
